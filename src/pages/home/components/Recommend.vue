@@ -3,7 +3,7 @@
     <div class="title">热销推荐</div>
     <ul>
       <li class="item border-bottom"
-          v-for="item of recommendList"
+          v-for="item of list"
           :key="item.id">
           <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
@@ -18,25 +18,8 @@
 <script>
 export default{
   name: 'HomeRecommend',
-  data: function () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1811/d4/d4a663613604238ea3.img.jpg_200x200_b412a8a2.jpg',
-        title: '长隆野生动物世界',
-        desc: '熊猫三胞胎与您共享欢乐时光'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1811/e0/e0a9c262bb657ee9a3.img.jpg_200x200_0b1847a6.jpg',
-        title: '长隆国际大马戏剧院',
-        desc: '跟着大马戏团一起party~'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/56/5639ccfd58c4cca4a3.img.png_200x200_0027165c.png',
-        title: '广州正佳极地海洋世界',
-        desc: '梦幻主题式极地海洋体验'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
