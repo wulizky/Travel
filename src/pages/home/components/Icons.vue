@@ -78,11 +78,11 @@ export default {
   @import '~styles/variables.styl'
   @import '~styles/mixins.styl'
   .icons >>>.swiper-container
-    overflow:hidden
     height: 0
-    width:100%
     padding-bottom:50%
-  .icon
+  .icons
+    margin-bottom: .1rem
+    .icon
       position: relative
       overflow: hidden
       float: left
