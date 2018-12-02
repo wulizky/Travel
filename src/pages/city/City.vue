@@ -2,13 +2,8 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-<<<<<<< HEAD
-    <city-list></city-list>
-    <city-alphabet></city-alphabet>
-=======
     <city-list :cities="cities" :hot="hotCities"></city-list>
     <city-alphabet :cities="cities"></city-alphabet>
->>>>>>> city-ajax
   </div>
 </template>
 
@@ -25,8 +20,6 @@ export default {
     CitySearch: CitySearch,
     CityList: CityList,
     CityAlphabet: CityAlphabet
-<<<<<<< HEAD
-=======
   },
   data () {
     return {
@@ -50,7 +43,6 @@ export default {
   },
   mounted () {
     this.getCityInfo()
->>>>>>> city-ajax
   }
 }
 </script>

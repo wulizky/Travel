@@ -1,36 +1,19 @@
 <template>
   <ul class="list">
-<<<<<<< HEAD
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-
-=======
     <li class="item"
         v-for="(item,key) of cities"
         :key="key">
         {{key}}
      </li>
->>>>>>> city-ajax
   </ul>
 </template>
 
 <script>
 export default{
-<<<<<<< HEAD
-  name: 'CityAlphabet'
-=======
   name: 'CityAlphabet',
   props: {
     cities: Object
   }
->>>>>>> city-ajax
 }
 </script>
 
@@ -48,10 +31,5 @@ export default{
     .item
       line-height:.4rem
       text-align:center
-<<<<<<< HEAD
-      color:$bgcolor
-
-=======
       color:$bgColor
->>>>>>> city-ajax
 </style>
