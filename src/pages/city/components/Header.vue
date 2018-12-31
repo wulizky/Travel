@@ -17,6 +17,7 @@ export default{
 <style lang="stylus" scoped>
   @import '~styles/variables.styl'
   .header
+    position:relative
     overflow:hidden
     height:$headerHeight
     line-height:$headerHeight
